@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="board">
+    <div class="container">
+        <h1>Создай свой шедевр<br> гамбургерианского искусства</h1>
+    </div>
+    <div class="container">
+        <h3>Выбери размер своего бутерброда</h3>
+        <label><input type="radio" name="size" id="small" checked>Малюсенький</label><br>
+        <label><input type="radio" name="size" id="big">Конечно большой</label>
+    </div>
+    <div class="container">
+        <h3>Выбери начинку</h3>
+        <select class="turnintodropdown" id="stuffing">
+            <option>ткни чтобы выбрать</option>
+            <option value="cheese">Сыр</option>
+            <option value="salad">Салат</option>
+            <option value="potatoes">Картофель</option>
+        </select>
+    </div>
+    <div class="container">
+        <h3>Подсластить</h3>
+        <label><input type="checkbox" name="spice" id="spice">Добавить специй</label><br>
+        <label><input type="checkbox" name="mayo" id="mayo">Залить все майонезиком</label>
+    </div>
+    <div class="container flex">
+        <input type="button" value="Рассчитать" id="submit">
+        <p></p>
+    </div>
+</div>
+<script src="Hamburger.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
