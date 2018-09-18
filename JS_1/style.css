@@ -1,0 +1,75 @@
+body {
+    font-family: "PTSans", sans-serif;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #777;
+}
+
+input {
+    display: block;
+    width: 1024px;
+    margin: 0 auto 20px;
+    font-size: 18px;
+    color: #ebebeb;
+    padding: 20px;
+    background-color: #4CAF50;
+}
+
+.mainMenu {
+    display: flex;
+    width: 1024px;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding: 0;
+    background-color: #e3e3e3;
+    height: 40px;
+    list-style-type: none;
+    line-height: 40px;
+    font-size: 16px;
+}
+
+.menuItem {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.menuItem:hover {
+    background-color: #dbdbdb;
+}
+
+.subMenu {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    padding-left: 0;
+    width: 100%;
+    background-color: #dbdbdb;
+}
+
+.subMenu li:hover {
+    background-color: #d1d1d1;
+}
+
+.subMenu2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 170px;
+    list-style-type: none;
+    padding-left: 0;
+    width: 100%;
+    background-color: #d1d1d1;
+}
+
+.subMenu2 li:hover {
+    background-color: #c6c6c6;
+}
+
+.mainMenu li:hover .subMenu,
+.subMenu li:hover .subMenu2{
+    display: block;
+}

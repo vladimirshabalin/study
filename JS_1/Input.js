@@ -6,7 +6,7 @@ class Input {
         this.type = type;
     }
 
-    renderInput() {
+    render() {
         return `<input value="${this.value}" type="${this.type}">`
     }
 }

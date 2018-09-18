@@ -1,12 +1,17 @@
 'use strict';
 
 class MenuItem {
-    constructor(href, title) {
+    constructor(href, title, className) {
         this.href = href;
         this.title = title;
+        this.className = className;
     }
 
-    renderItem() {
-        return `<li><a href="${this.href}">${this.title}</a></li>`
+    render() {
+        return `<li class="${this.className}"><a href="${this.href}">${this.title}</a></li>`
     }
+}
+
+window.storage = {
+    menuItem: MenuItem.className
 }
