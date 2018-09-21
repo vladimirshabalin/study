@@ -1,4 +1,38 @@
-/.idea
-/.DS_Store
-/JS_1/.DS_Store
-/JS_1/.idea
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   .gitignore
+	deleted:    JS_1/Input.js
+	deleted:    JS_1/Menu.js
+	deleted:    JS_1/Menuitem.js
+	deleted:    JS_1/gallery/.DS_Store
+	deleted:    JS_1/gallery/gallery.json
+	deleted:    JS_1/gallery/img/hat.jpg
+	deleted:    JS_1/gallery/img/jacket.jpg
+	deleted:    JS_1/gallery/img/shoes.jpg
+	deleted:    JS_1/gallery/img/socks.jpg
+	deleted:    JS_1/gallery/img/t-shirt.jpg
+	deleted:    JS_1/gallery/index.html
+	deleted:    JS_1/gallery/script.js
+	deleted:    JS_1/gallery/style.css
+	deleted:    JS_1/hamburger/Hamburger.js
+	deleted:    JS_1/hamburger/burger.png
+	deleted:    JS_1/hamburger/index.html
+	deleted:    JS_1/hamburger/script.js
+	deleted:    JS_1/hamburger/style.css
+	deleted:    JS_1/index.html
+	deleted:    JS_1/script.js
+	deleted:    JS_1/style.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	JS/
+	JS_1/.idea/
+
+no changes added to commit (use "git add" and/or "git commit -a")
