@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Title</title>
+</head>
+<body>
+<form action="#" method="post" id="form">
+    <h1>Форма для обработки заказа</h1>
+    <div><input type="text" name="username" placeholder="Ваше имя"></div>
+    <div><input list="cityList" name="city" class="city" placeholder="Город"></div>
+    <div><input type="email" name="email" placeholder="Действующий email"></div>
+    <div><input type="tel" id="tel" name="tel" placeholder="Номер телефона"></div>
+    <div><textarea rows="4" id="commit" name="commit" placeholder="Комментарии к заказу"></textarea></div>
+    <datalist id="cityList"></datalist>
+    <button type="submit" id="btn">оформить заказ</button>
+</form>
+<script src="script/jquery-3.3.1.min.js"></script>
+<script src="script/jquery.validate.min.js"></script>
+<script src="script/jquery.mask.min.js"></script>
+<script src="script/script.js"></script>
+</body>
+</html>

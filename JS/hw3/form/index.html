@@ -20,8 +20,14 @@
     <div><input type="tel" id="tel" placeholder="+7(000)000-0000"></div>
     <label for="commit">Комментарии к заказу</label>
     <div><input type="text" id="commit" placeholder="Текст должен содержать не более 200 символов"></div>
+    <label for="city">Укажите ваш город</label>
+    <div><input list="cityList" id="city"></div>
+    <datalist id="cityList"></datalist>
     <div>
         <button type="submit" id="btn" style="display: none">Отправить форму</button>
+    </div>
+    <div id="div">
+
     </div>
 </form>
 <script src="Validate.js"></script>

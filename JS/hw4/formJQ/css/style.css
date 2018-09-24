@@ -1,0 +1,80 @@
+body {
+    background-color: #d9d9d9;
+    color: #555;
+    font-family: "PT Sans", sans-serif;
+}
+
+#form {
+    width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 2px 0 #c2c2c2;
+    padding: 0 0 20px;
+}
+
+h1 {
+    cursor: default;
+    text-align: center;
+    padding: 30px 0 15px;
+    border-bottom: 1px solid #d9d9d9;
+    background-color: #555;
+    color: #f2f2f2;
+}
+
+label {
+
+}
+
+input {
+    display: inline-block;
+    height: 30px;
+    width: 200px;
+    outline: none;
+    margin: 10px 0 10px 50px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px solid #d9d9d9;
+    font-size: 12px;
+}
+
+#commit {
+    width: 195px;
+    height: 60px;
+    border: 2px solid #d9d9d9;
+    resize: none;
+    margin: 10px 0 10px 50px;
+    outline: none;
+    font-size: 12px;
+}
+
+label.error {
+    margin-left: 20px;
+}
+
+form label.error:last-child {
+    position: absolute;
+    margin-top: 12px;
+}
+
+.error {
+    color: #F26065;
+}
+
+button {
+    display: block;
+    margin: 10px auto 0;
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    outline: none;
+    background-color: #555;
+}
+
+button:hover {
+    background-color: #818181;
+}
