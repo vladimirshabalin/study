@@ -192,4 +192,12 @@ class Cart {
             }
         }
     }
+
+    _clearLocalStorage() {
+        localStorage.clear();
+        $('.cart-items-wrap').empty();
+        $('.shCart-wrapper-items').empty();
+        this._renderSum(0, 0);
+        $('.cart-num').css('display', 'none');
+    }
 }
