@@ -8,7 +8,6 @@ $(document).ready(function () {
         $('#cityList').html(items);
     });
 
-
     $('#tel').mask('+7 (000) 000 00 00');
 
     jQuery.validator.addMethod("checkName", function (value, element) {
