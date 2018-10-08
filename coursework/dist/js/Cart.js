@@ -134,59 +134,62 @@ class Cart {
     }
 
     _renderShCart() {
-        this.cartItems = JSON.parse(localStorage.getItem('mycart'));
-        for (let product of this.cartItems) {
-            let $shCartItem = $('<div/>', {
-                class: "shCart-item",
-                'data-product': product.id_product
-            });
-            let $shCartColProduct = $('<div/>', {
-                class: "shCart-col-product"
-            });
-            let $shCartProductDescription = $('<div/>', {
-                class: "shCart-product-description"
-            });
-            let $shCartColPrice = $('<div/>', {
-                class: "shCart-col-price"
-            });
-            let $shCartColQuantity = $('<div/>', {
-                class: "shCart-col-quantity"
-            });
-            let $shCartColShipping = $('<div/>', {
-                class: "shCart-col-shipping"
-            });
-            let $shCartColSubtotal = $('<div/>', {
-                class: "shCart-col-subtotal"
-            });
-            let $shCartColAction = $('<div/>', {
-                class: "shCart-col-action"
-            });
-            let $delBtn = $('<button class="del-btn shCart-item-del-btn">&times;</button>');
-            let sum = product.price*product.quantity;
-            $shCartColProduct.append($(`<img src="${product.img}">`));
-            $shCartColProduct.append($shCartProductDescription);
-            $shCartProductDescription.append($(`<p class="shCart-product-title">${product.product_name}</p>`));
-            $shCartProductDescription.append($(`<p class="shCart-product-text__color">color:<span>red</span></p>`));
-            $shCartProductDescription.append($(`<p class="shCart-product-text__color">size:<span>xll</span></p>`));
-            $shCartColPrice.append($(`<span>${product.price} $</span>`));
-            $shCartColQuantity.append($(`<span>${product.quantity}</span>`));
-            $shCartColShipping.append($(`<span>free</span>`));
-            $shCartColSubtotal.append($(`<span>${sum} $</span>`));
-            $shCartColAction.append($delBtn);
-            $shCartItem.append($shCartColProduct);
-            $shCartItem.append($shCartColPrice);
-            $shCartItem.append($shCartColQuantity);
-            $shCartItem.append($shCartColShipping);
-            $shCartItem.append($shCartColSubtotal);
-            $shCartItem.append($shCartColAction);
+        if (!localStorage.getItem('mycart')) {
+            this._renderSum(0, 0);
+        } else {
+            this.cartItems = JSON.parse(localStorage.getItem('mycart'));
+            for (let product of this.cartItems) {
+                let $shCartItem = $('<div/>', {
+                    class: "shCart-item",
+                    'data-product': product.id_product
+                });
+                let $shCartColProduct = $('<div/>', {
+                    class: "shCart-col-product"
+                });
+                let $shCartProductDescription = $('<div/>', {
+                    class: "shCart-product-description"
+                });
+                let $shCartColPrice = $('<div/>', {
+                    class: "shCart-col-price"
+                });
+                let $shCartColQuantity = $('<div/>', {
+                    class: "shCart-col-quantity"
+                });
+                let $shCartColShipping = $('<div/>', {
+                    class: "shCart-col-shipping"
+                });
+                let $shCartColSubtotal = $('<div/>', {
+                    class: "shCart-col-subtotal"
+                });
+                let $shCartColAction = $('<div/>', {
+                    class: "shCart-col-action"
+                });
+                let $delBtn = $('<button class="del-btn shCart-item-del-btn">&times;</button>');
+                let sum = product.price * product.quantity;
+                $shCartColProduct.append($(`<img src="${product.img}">`));
+                $shCartColProduct.append($shCartProductDescription);
+                $shCartProductDescription.append($(`<p class="shCart-product-title">${product.product_name}</p>`));
+                $shCartProductDescription.append($(`<p class="shCart-product-text__color">color:<span>red</span></p>`));
+                $shCartProductDescription.append($(`<p class="shCart-product-text__color">size:<span>xll</span></p>`));
+                $shCartColPrice.append($(`<span>${product.price} $</span>`));
+                $shCartColQuantity.append($(`<span>${product.quantity}</span>`));
+                $shCartColShipping.append($(`<span>free</span>`));
+                $shCartColSubtotal.append($(`<span>${sum} $</span>`));
+                $shCartColAction.append($delBtn);
+                $shCartItem.append($shCartColProduct);
+                $shCartItem.append($shCartColPrice);
+                $shCartItem.append($shCartColQuantity);
+                $shCartItem.append($shCartColShipping);
+                $shCartItem.append($shCartColSubtotal);
+                $shCartItem.append($shCartColAction);
 
-            $('.shCart-wrapper-items').append($shCartItem);
+                $('.shCart-wrapper-items').append($shCartItem);
 
-            $delBtn.click(() => {
-                this._remove(product.id_product);
+                $delBtn.click(() => {
+                    this._remove(product.id_product);
 
-            });
-
+                });
+            }
         }
     }
 }

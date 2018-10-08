@@ -71,6 +71,9 @@ $(document).ready(() => {
             filter: 'none'
         });
     });
+    // $(".cart-close").on("click", function () {
+
+    // });
 
     // форма регистрации и входа
     let modal = new tingle.modal();
