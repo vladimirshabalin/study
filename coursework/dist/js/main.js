@@ -166,7 +166,4 @@ $(document).ready(() => {
             $('.tingle-modal-box').find('#authorization').removeClass('authorization-active');
         }
     })
-
-    // отзывы
-    let feed = new Feedback('json/feedback.json');
 })

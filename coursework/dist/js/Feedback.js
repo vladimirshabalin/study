@@ -78,5 +78,6 @@ class Feedback {
             .remove();
         find.approved = true;
     }
-
 }
+
+let feed = new Feedback('json/feedback.json');
