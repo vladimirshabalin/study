@@ -1,0 +1,71 @@
+doctype html
+html(lang="en")
+    include includes/_head.pug
+    body
+        include includes/_header.pug
+        div#cart
+        .wrapper
+            .container
+                nav#menu.margin-top
+            include includes/_bread.pug
+            .container
+                .shcart.margin-top
+                    .shCart-title
+                        .shCart-col-product
+                            span product details
+                        .shCart-col-price
+                            span uniteprice
+                        .shCart-col-quantity
+                            span quantity
+                        .shCart-col-shipping
+                            span shipping
+                        .shCart-col-subtotal
+                            span subtotal
+                        .shCart-col-action
+                            span action
+                    .shCart-wrapper-items
+                    .shCart-buttons
+                        .shCart-btn clear chopping cart
+                        .shCart-btn continue shopping
+                    .shCart-issue
+                .shCart-location
+                    .shCart-location-col
+                        form.shipping-adress
+                            p.shCart-location-title shipping adress
+                            input(list="sity")
+                            datalist(id="sity")
+                                option(value="moscow")
+                                option(value="samara")
+                                option(value="omsk")
+                                option(value="tomsk")
+                            input(list="state")
+                            datalist(id="state")
+                                option(value="moscow obl")
+                                option(value="samara obl")
+                                option(value="omsk obl")
+                                option(value="tomsk obl")
+                            input(type="number" placeholder="postcode/zip")
+                            button get a quote
+                    .shCart-location-col
+                        form.shipping-adress
+                            p.shCart-location-title coupon discount
+                            span.shCart-location-text Enter your coupon code if you have one
+                            input(type="text" placeholder="state")
+                            button apply coupon
+                    .shCart-location-col.proceed-checkout
+                        p.sub-total sub total
+                            span.sub-total-price 0
+                        p.shCart-location-title grand total
+                            span.grand-total-price 0
+                        .proceed-checkout-btn proceed to checkout
+            include includes/_subscribe.pug
+            include includes/_footer.pug
+        div.test
+        script(src='js/jquery.min.js')
+        script(src='js/jquery.validate.min.js')
+        script(src='js/jquery.mask.min.js')
+        script(src='js/tingle.min.js')
+        script(src='js/MenuItem.js')
+        script(src='js/Menu.js')
+        script(src='js/Cart.js')
+        script(src='js/main.js')

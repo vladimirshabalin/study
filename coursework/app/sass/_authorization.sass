@@ -1,0 +1,79 @@
+.tingle-modal-box
+  width: 600px
+  margin: 120px auto 0
+  padding: 0
+  &__content
+    padding: 0
+
+.authorization-modal-wrapper
+  display: none
+
+.authorization-modal
+  width: 600px
+  margin: 0 auto
+  display: flex
+  button
+    border: none
+    width: 50%
+    height: 40px
+    font-size: 18px
+    text-transform: capitalize
+    border-bottom: 3px solid $text_color_dop
+    color: $text_color
+    &:hover
+      color: #fff
+      background-color: $text_color_dop
+  .authorization-active-tab
+    color: #fff
+    background-color: $text_color_dop
+
+#form-authorization, #form-registration
+  width: 600px
+  margin: 0 auto
+  background-color: #fff
+  padding: 10px 0
+
+.authorization
+  display: none
+
+.authorization-active
+  display: block
+
+.authorization-input-wrapper
+ display: flex
+
+.authorization-input
+  display: block
+  height: 30px
+  width: 200px
+  outline: none
+  margin: 10px 0 10px 30px
+  border: none
+  border-bottom: 2px solid #d9d9d9
+  font-size: 12px
+
+label.error
+  margin-left: 20px
+  margin-top: 13px
+
+.error
+  color: #F26065
+
+.authorization-modal-btn
+  display: block
+  margin: 20px auto
+  height: 40px
+  width: 200px
+  border-radius: 5px
+  font-size: 14px
+  color: $text_color_dop
+  text-transform: uppercase
+  outline: none
+  background-color: #fff
+  border: 1px solid $text_color_dop
+  &:hover
+    background-color: $text_color_dop
+    color: #fff
+
+.tingle-modal__closeIcon
+  color: #fff

@@ -1,0 +1,89 @@
+doctype html
+html(lang="en")
+    include includes/_head.pug
+    body
+        include includes/_header.pug
+        div#cart
+        .wrapper
+            .container
+                nav#menu.margin-top
+            include includes/_bread.pug
+            .slider
+                img(src="img/slider1.jpg")
+                i.fas.fa-angle-left.slider-arrow-left
+                i.fas.fa-angle-right.slider-arrow-right
+            .container
+                .product-card
+                    span.product-card-category women collection
+                    .product-card-category-decoration
+                    p.product-card-title moschino cheap and chic
+                    p.product-card-discription Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam hic, id iste mollitia non velit? Eum incidunt iste nostrum suscipit tempore. Blanditiis eligendi maiores minima, nostrum nulla porro quod voluptatibus? Amet blanditiis debitis dolores ducimus in omnis provident
+                    .product-card-set
+                        span.product-card-material material:
+                            span cotton
+                        span.product-card-material designer:
+                            span binburhan
+                    p.product-card-price $561
+                    form.product-card-form(action="#" method="post")
+                        .product-card-form-wrapper
+                            .product-card-form-item
+                                label(for="product-color-title") choose label
+                                .product-color-sqr
+                                input(list="product-color" id="product-color-title" placeholder="Red")
+                                datalist( id="product-color")
+                                    option(value="Red")
+                                    option(value="Green")
+                                    option(value="Blue")
+                            .product-card-form-item
+                                label(for="product-size-title") choose size
+                                input(list="product-size" id="product-size-title" placeholder="XXL")
+                                datalist( id="product-size")
+                                    option(value="L")
+                                    option(value="XL")
+                                    option(value="XXL")
+                            .product-card-form-item
+                                label(for="product-quantity") quantity
+                                input(type="number" id="product-quantity" placeholder="2")
+                        p.cart-add-btn Add to Cart
+                            i.fas.fa-shopping-cart.cart-add-icon
+                .suit.margin-top
+                    p.suit-title you may like also
+                    .suit-item-wrapper
+                        .goods-item
+                            img(src='img/item1.jpg')
+                            p.goods-item-title t-shirt
+                            p.goods-item-price $52.00
+                            .goods-item-hover
+                                i.fas.fa-shopping-cart.cart-add-icon
+                                p.cart-add-btn(data-img="img/item1.jpg" data-id="001" data-price="52.00" data-name="t-shirt") Add to Cart
+                        .goods-item
+                            img(src='img/item2.jpg')
+                            p.goods-item-title blouse
+                            p.goods-item-price $74.00
+                            .goods-item-hover
+                                i.fas.fa-shopping-cart.cart-add-icon
+                                p.cart-add-btn(data-img="img/item2.jpg" data-id="002" data-price="74.00" data-name="blouse") Add to Cart
+                        .goods-item
+                            img(src='img/item3.jpg')
+                            p.goods-item-title jacket
+                            p.goods-item-price $152.00
+                            .goods-item-hover
+                                i.fas.fa-shopping-cart.cart-add-icon
+                                p.cart-add-btn(data-img="img/item3.jpg" data-id="003" data-price="152.00" data-name="jacket") Add to Cart
+                        .goods-item
+                            img(src='img/item4.jpg')
+                            p.goods-item-title dress
+                            p.goods-item-price $88.00
+                            .goods-item-hover
+                                i.fas.fa-shopping-cart.cart-add-icon
+                                p.cart-add-btn(data-img="img/item4.jpg" data-id="004" data-price="88.00" data-name="dress") Add to Cart
+            include includes/_subscribe.pug
+            include includes/_footer.pug
+        script(src='js/jquery.min.js')
+        script(src='js/jquery.validate.min.js')
+        script(src='js/jquery.mask.min.js')
+        script(src='js/tingle.min.js')
+        script(src='js/MenuItem.js')
+        script(src='js/Menu.js')
+        script(src='js/Cart.js')
+        script(src='js/main.js')

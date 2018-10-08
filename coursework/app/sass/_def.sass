@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i')
+
+$bg_color: #fff
+$text_color: #222
+$text_color_dop: #f16d7f
+
+body, a, p, span, ul, li
+  margin: 0
+  padding: 0
+  color: $text_color
+  font-family: 'Lato', sans-serif
+
+p
+  cursor: default
+
+ul
+  list-style: none
+
+a
+  text-decoration: none
+
+input, button
+  outline: none
+  margin: 0
+  padding: 0
+
+.container
+  width: 1140px
+  margin: 0 auto
+
+.flex
+  display: flex
+
+.margin-top
+  margin-top: 100px
+
+.relative
+  position: relative
+
+#cart
+  display: none
+
+.cart-num
+  position: absolute
+  top: 30px
+  left: -28px
+  font-size: 14px
+  text-align: center
+  background-color: #ef5b70
+  border-radius: 50%
+  width: 22px
+  height: 22px
+  line-height: 22px
+  color: #fff
+  display: none
+
+#cart
+  width: 400px
+  height: 100%
+  background: #fcfcfc
+  border-left: 1px solid #ececec
+  border-top: 5px solid #ef5b70
+  position: fixed
+  top: 100
+  right: -600px
+  z-index: 100
+  overflow-y: scroll
+  padding: 20px 20px 100px 20px
+  color: #6f6e6e
+  box-sizing: border-box
+
+#cart p
+  width: 100%
+  text-align: center
+
+.cart-item
+  color: #222
+  width: 100%
+  display: flex
+  justify-content: space-between
+  padding: 10px 0
+  border-bottom: 1px solid #ececec
+
+.product-img
+  width: 125px
+  height: 280px*125px/260px
+
+.product-text-wrapper
+  width: 125px
+  p
+    text-align: left !important
+    padding-bottom: 10px
+    text-transform: uppercase
+    color: $text_color
+    font-size: 14px
+    font-weight: 400
+
+.del-btn
+  display: block
+  background-color: #cfcfcf
+  color: #fff
+  border: none
+  border-radius: 100%
+  font-size: 18px
+  height: 22px
+  width: 22px
+  line-height: 22px
+
+.cart-wrapper-btn
+  display: flex
+  justify-content: space-between
+
+.cart-wrapper-btn
+  padding-bottom: 20px
+  button, a
+    display: inline-block
+    padding: 10px 20px
+    background: $text_color_dop
+    color: #fff
+    font-size: 14px
+    margin-top: 20px
+
+.cart-summary
+  margin: 10px 0

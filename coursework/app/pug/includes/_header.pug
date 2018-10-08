@@ -1,0 +1,27 @@
+header.header
+    .container
+        .header-content
+            .header-content-left
+                a.logo-link(href="index.html")
+                    img.logo-img(src="img/logo.png")
+                    span.logo-text_black bran
+                    span.logo-text_red d
+                .search-item
+                    input.search-item-select(placeholder="Browse" list="search-item-list")
+                    datalist#search-item-list
+                        option(value="HOME")
+                        option(value="MEN")
+                        option(value="WOMEN")
+                        option(value="KIDS")
+                        option(value="ACCSESORIES")
+                        option(value="FEATURED")
+                        option(value="HOT DEALS")
+                    input.search-item-field(type="text" placeholder="Search for Item...")
+                    button.search-item-btn(type="submit")
+                        i.fas.fa-search.search-item-icon
+            .header-content-right
+                i.fas.fa-shopping-cart.cart-icon#cart-btn
+                span.cart-num
+                span.authorization-btn my account
+                i.fas.fa-sort-down.authorization-btn-arrow
+    include _authorization.pug

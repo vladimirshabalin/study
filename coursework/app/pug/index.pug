@@ -1,0 +1,147 @@
+doctype html
+html(lang="en")
+    include includes/_head.pug
+    body
+        include includes/_header.pug
+        div#cart
+        .wrapper
+            .container
+                nav#menu.margin-top
+            .banner
+                .container.relative
+                    .banner-text
+                        p.banner-title the brand
+                        p.banner-discription of luxerious
+                            span fashion
+            .container
+                .stock.margin-top
+                    .stock-left
+                        .stock-big
+                            img(src="img/offer1.jpg")
+                            .stock-text
+                                p.stock-discription hot deal
+                                p.stock-title for men
+                        .stock-small
+                            img(src="img/offer2.jpg")
+                            .stock-text
+                                p.stock-discription luxirous & trendy
+                                p.stock-title accesories
+                    .stock-right
+                        .stock-small
+                            img(src="img/offer3.jpg")
+                            .stock-text
+                                p.stock-discription 30% offer
+                                p.stock-title women
+                        .stock-big
+                            img(src="img/offer4.jpg")
+                            .stock-text
+                                p.stock-discription new arriwals
+                                p.stock-title for kids
+                .goods.margin-top
+                    p.goods-title fetured items
+                    p.goods-discription shop for item based on what we fetured in this week
+                    .goods-wrapper-items
+                        .goods-item
+                            img(src='img/item1.jpg')
+                            p.goods-item-title t-shirt
+                            p.goods-item-price $52.00
+                            .goods-item-hover
+                                i.fas.fa-shopping-cart.cart-add-icon
+                                p.cart-add-btn(data-img="img/item1.jpg" data-id="001" data-price="52.00" data-name="t-shirt") Add to Cart
+                        .goods-item
+                            img(src='img/item2.jpg')
+                            p.goods-item-title blouse
+                            p.goods-item-price $74.00
+                            .goods-item-hover
+                                i.fas.fa-shopping-cart.cart-add-icon
+                                p.cart-add-btn(data-img="img/item2.jpg" data-id="002" data-price="74.00" data-name="blouse") Add to Cart
+                        .goods-item
+                            img(src='img/item3.jpg')
+                            p.goods-item-title jacket
+                            p.goods-item-price $152.00
+                            .goods-item-hover
+                                i.fas.fa-shopping-cart.cart-add-icon
+                                p.cart-add-btn(data-img="img/item3.jpg" data-id="003" data-price="152.00" data-name="jacket") Add to Cart
+                        .goods-item
+                            img(src='img/item4.jpg')
+                            p.goods-item-title dress
+                            p.goods-item-price $88.00
+                            .goods-item-hover
+                                i.fas.fa-shopping-cart.cart-add-icon
+                                p.cart-add-btn(data-img="img/item4.jpg" data-id="004" data-price="88.00" data-name="dress") Add to Cart
+                        .goods-item
+                            img(src='img/item5.jpg')
+                            p.goods-item-title blouse black/white
+                            p.goods-item-price $35.00
+                            .goods-item-hover
+                                i.fas.fa-shopping-cart.cart-add-icon
+                                p.cart-add-btn(data-img="img/item5.jpg" data-id="005" data-price="35.00" data-name="blouse black/white") Add to Cart
+                        .goods-item
+                            img(src='img/item6.jpg')
+                            p.goods-item-title costume
+                            p.goods-item-price $130.00
+                            .goods-item-hover
+                                i.fas.fa-shopping-cart.cart-add-icon
+                                p.cart-add-btn(data-img="img/item6.jpg" data-id="006" data-price="130.00" data-name="costume") Add to Cart
+                        .goods-item
+                            img(src='img/item7.jpg')
+                            p.goods-item-title pants
+                            p.goods-item-price $21.00
+                            .goods-item-hover
+                                i.fas.fa-shopping-cart.cart-add-icon
+                                p.cart-add-btn(data-img="img/item7.jpg" data-id="007" data-price="21.00" data-name="pants") Add to Cart
+                        .goods-item
+                            img(src='img/item8.jpg')
+                            p.goods-item-title shorts
+                            p.goods-item-price $10.00
+                            .goods-item-hover
+                                i.fas.fa-shopping-cart.cart-add-icon
+                                p.cart-add-btn(data-img="img/item8.jpg" data-id="008" data-price="10.00" data-name="shorts") Add to Cart
+                    a.goods-view-btn browse all product
+                        i.fas.fa-long-arrow-alt-right.goods-view-icon
+                .offer.margin-top.flex
+                    .offer-banner
+                        .offer-banner-text
+                            p.offer-banner-title 30%
+                                span offer
+                            p.offer-banner-discription for women
+                    .offer-text
+                        .offer-text-item
+                            i.fas.fa-luggage-cart.offer-item-icon
+                            .offer-item-text
+                                p.offer-item-title free delivery
+                                p.offer-item-discription Lorem ipsum dolor sit amet, consectetur adipisicing elit. A autem commodi dignissimos dolor illum labore molestias
+                        .offer-text-item
+                            i.fas.fa-percent.offer-item-icon
+                            .offer-item-text
+                                p.offer-item-title sales & discounts
+                                p.offer-item-discription Lorem ipsum dolor sit amet, consectetur adipisicing elit. A autem commodi dignissimos dolor illum labore molestias
+                        .offer-text-item
+                            i.fas.fa-crown.offer-item-icon
+                            .offer-item-text
+                                p.offer-item-title quality assurance
+                                p.offer-item-discription Lorem ipsum dolor sit amet, consectetur adipisicing elit. A autem commodi dignissimos dolor illum labore molestias
+            include includes/_subscribe.pug
+            .container
+                p.goods-title.margin-top(style="text-align: center") review
+                p.goods-discription(style="text-align: center") leave your review about our store
+                div#feedback
+        .feedback
+            .container
+                form.feedback-form(action="" id="myform")
+                    p добавить отзыв
+                    label представьтесь
+                    input(type="text" id="author")
+                    label текст отзыва
+                    textarea(id="text" rows="10")
+                    button(type="submit") оставить отзыв
+        include includes/_footer.pug
+    script(src='js/jquery.min.js')
+    script(src='js/jquery.validate.min.js')
+    script(src='js/jquery.mask.min.js')
+    script(src='js/tingle.min.js')
+    script(src='js/MenuItem.js')
+    script(src='js/Menu.js')
+    script(src='js/Cart.js')
+    script(src='js/Feedback.js')
+    script(src='js/main.js')

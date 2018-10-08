@@ -1,0 +1,226 @@
+doctype html
+html(lang="en")
+    include includes/_head.pug
+    body
+        include includes/_header.pug
+        div#cart
+        .wrapper
+            .container
+                nav#menu.margin-top
+            include includes/_bread.pug
+            .catalog.margin-top
+                .container.flex
+                    .catalog-sidbar
+                        details(open)
+                            summary category
+                                i.fas.fa-sort-down.catalog-sidbar-arrow
+                            ul.catalog-sidbar-menu
+                                li
+                                    a(href="#") accessories
+                                li
+                                    a(href="#") bags
+                                li
+                                    a(href="#") denim
+                                li
+                                    a(href="#") hoodies & sweatshirts
+                                li
+                                    a(href="#") jackets & coats
+                                li
+                                    a(href="#") paints
+                                li
+                                    a(href="#") polos
+                                li
+                                    a(href="#") shirts
+                                li
+                                    a(href="#") shoes
+                                li
+                                    a(href="#") shorts
+                                li
+                                    a(href="#") sweaters & knits
+                                li
+                                    a(href="#") t-shirts
+                                li
+                                    a(href="#") tanks
+                        details
+                            summary brand
+                                i.fas.fa-sort-down.catalog-sidbar-arrow
+                        details
+                            summary designer
+                                i.fas.fa-sort-down.catalog-sidbar-arrow
+                    .catalog-content
+                        .catalog-filter
+                            .catalog-filter-col
+                                p.catalog-filter-title trending now
+                                .catalog-filter-row
+                                    a.catalog-filter-text boherman
+                                    span |
+                                    a.catalog-filter-text floral
+                                    span |
+                                    a.catalog-filter-text lace
+                                .catalog-filter-row
+                                    a.catalog-filter-text floral
+                                    span |
+                                    a.catalog-filter-text lace
+                                    span |
+                                    a.catalog-filter-text boherman
+                            .catalog-filter-col
+                                p.catalog-filter-title size
+                                .catalog-filter-row
+                                    .catalog-filter-col
+                                        input(type="checkbox" id="catalog-filter-size-xxs")
+                                        label(for="catalog-filter-size-xxs") xxs
+                                    .catalog-filter-col
+                                        input(type="checkbox" id="catalog-filter-size-xs")
+                                        label(for="catalog-filter-size-xs") xs
+                                    .catalog-filter-col
+                                        input(type="checkbox" id="catalog-filter-size-s")
+                                        label(for="catalog-filter-size-s") s
+                                    .catalog-filter-col
+                                        input(type="checkbox" id="catalog-filter-size-m")
+                                        label(for="catalog-filter-size-m") m
+                                .catalog-filter-row
+                                    .catalog-filter-col
+                                        input(type="checkbox" id="catalog-filter-size-l")
+                                        label(for="catalog-filter-size-l") l
+                                    .catalog-filter-col
+                                        input(type="checkbox" id="catalog-filter-size-xl")
+                                        label(for="catalog-filter-size-xl") xl
+                                    .catalog-filter-col
+                                        input(type="checkbox" id="catalog-filter-size-xxl")
+                                        label(for="catalog-filter-size-xxl") xxl
+                            .catalog-filter-col
+                                p.catalog-filter-title price
+                                .catalog-filter-row
+                                    input(type="range" min="0" max="100" value="30")
+                                .catalog-filter-row.catalog-filter-range-price
+                                    span.catalog-filter-range-text $52
+                                    span.catalog-filter-range-text $400
+                        .catalog-filter-sort
+                            span sort by
+                            input(list="catalog-sort-by" placeholder="name")
+                            datalist(id="catalog-sort-by")
+                                option(value="name")
+                                option(value="price")
+                                option(value="size")
+                            span show items
+                            input.sort-show-items(list="catalog-sort-quantity" placeholder="09")
+                            datalist(id="catalog-sort-quantity")
+                                option(value="9")
+                                option(value="18")
+                                option(value="27")
+                        .goods-wrapper-items
+                            .goods-item
+                                img(src='img/item1.jpg')
+                                p.goods-item-title t-shirt
+                                p.goods-item-price $52.00
+                                .goods-item-hover
+                                    i.fas.fa-shopping-cart.cart-add-icon
+                                    p.cart-add-btn(data-img="img/item1.jpg" data-id="001" data-price="52.00" data-name="t-shirt") Add to Cart
+                            .goods-item
+                                img(src='img/item2.jpg')
+                                p.goods-item-title blouse
+                                p.goods-item-price $74.00
+                                .goods-item-hover
+                                    i.fas.fa-shopping-cart.cart-add-icon
+                                    p.cart-add-btn(data-img="img/item2.jpg" data-id="002" data-price="74.00" data-name="blouse") Add to Cart
+                            .goods-item
+                                img(src='img/item3.jpg')
+                                p.goods-item-title jacket
+                                p.goods-item-price $152.00
+                                .goods-item-hover
+                                    i.fas.fa-shopping-cart.cart-add-icon
+                                    p.cart-add-btn(data-img="img/item3.jpg" data-id="003" data-price="152.00" data-name="jacket") Add to Cart
+                            .goods-item
+                                img(src='img/item4.jpg')
+                                p.goods-item-title dress
+                                p.goods-item-price $88.00
+                                .goods-item-hover
+                                    i.fas.fa-shopping-cart.cart-add-icon
+                                    p.cart-add-btn(data-img="img/item4.jpg" data-id="004" data-price="88.00" data-name="dress") Add to Cart
+                            .goods-item
+                                img(src='img/item5.jpg')
+                                p.goods-item-title blouse black/white
+                                p.goods-item-price $35.00
+                                .goods-item-hover
+                                    i.fas.fa-shopping-cart.cart-add-icon
+                                    p.cart-add-btn(data-img="img/item5.jpg" data-id="005" data-price="35.00" data-name="blouse black/white") Add to Cart
+                            .goods-item
+                                img(src='img/item6.jpg')
+                                p.goods-item-title costume
+                                p.goods-item-price $130.00
+                                .goods-item-hover
+                                    i.fas.fa-shopping-cart.cart-add-icon
+                                    p.cart-add-btn(data-img="img/item6.jpg" data-id="006" data-price="130.00" data-name="costume") Add to Cart
+                            .goods-item
+                                img(src='img/item7.jpg')
+                                p.goods-item-title pants
+                                p.goods-item-price $21.00
+                                .goods-item-hover
+                                    i.fas.fa-shopping-cart.cart-add-icon
+                                    p.cart-add-btn(data-img="img/item7.jpg" data-id="007" data-price="21.00" data-name="pants") Add to Cart
+                            .goods-item
+                                img(src='img/item8.jpg')
+                                p.goods-item-title shorts
+                                p.goods-item-price $10.00
+                                .goods-item-hover
+                                    i.fas.fa-shopping-cart.cart-add-icon
+                                    p.cart-add-btn(data-img="img/item8.jpg" data-id="008" data-price="10.00" data-name="shorts") Add to Cart
+                            .goods-item
+                                img(src='img/item8.jpg')
+                                p.goods-item-title shorts
+                                p.goods-item-price $10.00
+                                .goods-item-hover
+                                    i.fas.fa-shopping-cart.cart-add-icon
+                                    p.cart-add-btn(data-img="img/item8.jpg" data-id="008" data-price="10.00" data-name="shorts") Add to Cart
+
+                        .catalog-nav
+                            .catalog-pages
+                                ul.catalog-pages-menu
+                                    li
+                                        a(href="#")
+                                            i.fas.fa-angle-left
+                                    li
+                                        a(href="#").active-page 1
+                                    li
+                                        a(href="#") 2
+                                    li
+                                        a(href="#") 3
+                                    li
+                                        a(href="#") 4
+                                    li
+                                        a(href="#") 5
+                                    li
+                                        a(href="#") 6
+                                    li
+                                        a(href="#") ...
+                                    li
+                                        a(href="#") 20
+                                    li
+                                        a(href="#")
+                                            i.fas.fa-angle-right.active-page
+                                a.catalog-pages-link(href="#") view all
+            .feature.margin-top
+                .container
+                    .feature-items-wrapper
+                        .feature-item
+                            i.fas.fa-luggage-cart.feature-item-icon
+                            p.feature-item-title free delivery
+                            p.feature-item-discription Lorem ipsum dolor sit amet, consectetur adipisicing elit. A autem commodi dignissimos dolor illum labore molestias
+                        .feature-item
+                            i.fas.fa-percent.feature-item-icon
+                            p.feature-item-title sales & discounts
+                            p.feature-item-discription Lorem ipsum dolor sit amet, consectetur adipisicing elit. A autem commodi dignissimos dolor illum labore molestias
+                        .feature-item
+                            i.fas.fa-crown.feature-item-icon
+                            p.feature-item-title quality assurance
+                            p.feature-item-discription Lorem ipsum dolor sit amet, consectetur adipisicing elit. A autem commodi dignissimos dolor illum labore molestias
+            include includes/_subscribe.pug
+            include includes/_footer.pug
+        script(src='js/jquery.min.js')
+        script(src='js/jquery.validate.min.js')
+        script(src='js/jquery.mask.min.js')
+        script(src='js/tingle.min.js')
+        script(src='js/MenuItem.js')
+        script(src='js/Menu.js')
+        script(src='js/Cart.js')
+        script(src='js/main.js')

@@ -1,0 +1,176 @@
+.catalog-sidbar
+  width: 250px
+  summary
+    outline: none
+    position: relative
+    border-left: 5px solid $text_color_dop
+    border-bottom: 1px solid #ebebeb
+    height: 40px
+    margin-bottom: 30px
+    color: $text_color_dop
+    font-size: 14px
+    text-transform: uppercase
+    padding-left: 15px
+    font-weight: 700
+    line-height: 40px
+    &::-webkit-details-marker
+      display: none
+
+.catalog-sidbar-arrow
+  position: absolute
+  top: 10px
+  right: 15px
+
+.catalog-sidbar-menu
+  margin: -10px 0 20px 20px
+  text-transform: capitalize
+  font-size: 14px
+  font-weight: 400
+  li
+    padding: 10px 0
+    a
+      color: #6f6e6e
+      &:hover
+        color: $text_color_dop
+
+.catalog-content
+  width: 1140px - 250px
+  padding-left: 40px
+  .catalog-filter
+    display: flex
+    justify-content: space-between
+
+.catalog-filter
+  margin-bottom: 30px
+
+.catalog-filter-col
+  .catalog-filter-title
+    color: #6f6e6e
+    text-transform: uppercase
+    font-size: 14px
+    font-weight: 700
+    margin: 12px 0 20px
+  .catalog-filter-text
+    color: #6f6e6e
+    font-size: 14px
+    font-weight: 400
+    text-transform: capitalize
+  span
+    color: #dfdfdf
+    font-size: 14px
+    font-weight: 400
+    padding: 0 15px
+
+.catalog-filter-row
+  display: flex
+  margin-bottom: 10px
+  input[type="checkbox"]
+    -webkit-appearance: none
+    width: 13px
+    height: 13px
+    border: 1px solid #6f6e6e
+    outline: none
+  input[type="checkbox"]:checked:before
+    content: ""
+    display: block
+    width: 9px
+    height: 9px
+    background-color: #6f6e6e
+    margin: 1px
+    pointer-events: none
+  label
+    text-transform: uppercase
+    padding: 0 20px 0 5px
+    color: #6f6e6e
+  .catalog-filter-col
+    width: 70px
+  input[type="range"]
+    background-color: #f0f0f0
+    width: 262px
+    height: 6px
+  .catalog-filter-range-text
+    padding: 15px 0 0
+    display: inline-block
+    color: #6f6e6e
+    font-size: 14px
+    font-weight: 400
+
+.catalog-filter-range-price
+  justify-content: space-between
+
+.catalog-filter-sort
+  background-color: #f3f3f3
+  height: 50px
+  box-sizing: border-box
+  width: 100%
+  padding: 11px 0 11px 20px
+  span, input
+    border: 1px solid #ebebeb
+    display: inline-block
+    padding: 5px 10px
+    color: #6f6e6e
+    font-size: 14px
+    font-weight: 400
+    text-transform: capitalize
+    background-color: #fff
+  input
+    margin-left: -4px
+    margin-right: 20px
+
+.sort-show-items
+  width: 50px
+
+.catalog-pages
+  display: flex
+  justify-content: space-between
+  .catalog-pages-link
+    color:  #ef5b70
+    font-size: 16px
+    text-transform: capitalize
+    font-weight: 300
+    border: 1px solid $text_color_dop
+    line-height: 44px
+    padding: 0 40px
+    &:hover
+      background-color: $text_color_dop
+      color: #fff
+
+.catalog-pages-menu
+  display: flex
+  border-radius: 3px
+  border: 1px solid #ebebeb
+  line-height: 44px
+  height: 44px
+  li
+    padding: 0 10px
+    a
+      color:  #c4c4c4
+      font-size: 16px
+      font-weight: 300
+    .active-page
+      color: $text_color_dop
+      
+.feature
+  background-color: #222224
+  .feature-items-wrapper
+    padding: 100px 0
+    display: flex
+    justify-content: space-between
+
+.feature-item
+  text-align: center
+  width: 310px
+  &-icon
+    font-size: 32px
+    color: $text_color_dop
+  &-title
+    color:  #fbfbfb
+    font-size: 20px
+    font-weight: 700
+    text-transform: capitalize
+  &-discription
+    color:  #fbfbfb
+    font-size: 14px
+    font-weight: 300
+  p, i
+    padding: 10px 0

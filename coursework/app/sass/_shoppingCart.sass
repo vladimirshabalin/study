@@ -1,0 +1,160 @@
+.shCart-title
+  display: flex
+  width: 100%
+  border-bottom: 1px solid #eaeaea
+  padding-bottom: 20px
+  text-transform: uppercase
+  color: #222222
+  font-size: 13px
+  font-weight: 700
+
+.shCart-col-product
+  width: 35%*1140px/100%
+
+.shCart-col-price, .shCart-col-quantity, .shCart-col-shipping, .shCart-col-subtotal, .shCart-col-action
+  width: 13%*1140px/100%
+  text-align: center
+
+.shCart-item
+  display: flex
+  padding: 20px 0
+  border-bottom: 1px solid #eaeaea
+  .shCart-col-product
+    display: flex
+    img
+      width: 100px
+      height: 115px
+  .shCart-col-price, .shCart-col-quantity, .shCart-col-shipping, .shCart-col-subtotal, .shCart-col-action
+    line-height: 115px
+    span
+      color: #656565
+      text-transform: uppercase
+      font-size: 13px
+      font-weight: 400
+
+.shCart-item-del-btn
+  background-color: #656565
+  display: block
+  margin: 47px 0 0 62px
+  &:hover
+    background-color: $text_color_dop
+
+.shCart-product-description
+  padding-left: 20px
+  p.shCart-product-title
+    text-transform: uppercase
+    color: $text_color
+    font-size: 13px
+    font-weight: 400
+    padding: 10px 0 30px
+  p.shCart-product-text__color
+    text-transform: capitalize
+    color:  #575757
+    font-size: 13px
+    font-weight: 400
+    span
+      padding-left: 5px
+      line-height: 18px
+      color:  #6f6e6e
+      font-size: 13px
+      font-weight: 300
+
+.shCart-col-quantity input
+  width: 54px
+  height: 30px
+  border: 1px solid #eaeaea
+  text-align: center
+
+.shCart-buttons
+  display: flex
+  justify-content: space-between
+  padding: 40px 0
+  .shCart-btn
+    color:  #4a4a4a
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    border: 1px solid #eaeaea
+    padding: 15px 30px
+    &:hover
+      background-color: #eaeaea
+      cursor: pointer
+
+.shCart-location
+  display: flex
+  justify-content: space-between
+  .shCart-location-col
+    margin-right: 20px
+
+.shCart-location-title
+  text-transform: uppercase
+  color:  $text_color
+  font-size: 16px
+  font-weight: 700
+
+.shipping-adress
+  input
+    display: block
+    border: 1px solid #eaeaea
+    background-color:  #ffffff
+    width: 355px
+    height: 45px
+    margin: 20px 0
+    padding-left: 20px
+    color:  #b1b1b1
+    text-transform: capitalize
+    font-size: 13px
+    font-weight: 300
+  button
+    color:  #4a4a4a
+    font-size: 11px
+    font-weight: 700
+    text-transform: uppercase
+    padding: 10px 20px
+    border: 1px solid #eaeaea
+    background-color: #FFF
+    outline: none
+    &:hover
+      background-color: #eaeaea
+      cursor: pointer
+  span
+    display: block
+    margin: 20px 0
+    color:  #000000
+    font-size: 14px
+    font-weight: 300
+
+.shCart-location-col.proceed-checkout
+  margin-right: 0
+  background-color: #f5f3f3
+  width: 360px
+  padding: 40px
+  .sub-total
+    color:  #4a4a4a
+    font-size: 11px
+    font-weight: 400
+    text-align: right
+    text-transform: uppercase
+    margin: 20px 0
+    span
+      padding-left: 20px
+  .shCart-location-title
+    text-align: right
+    padding-bottom: 30px
+    border-bottom: 1px solid #eaeaea
+    span
+      padding-left: 20px
+      color: $text_color_dop
+  .proceed-checkout-btn
+    background-color: $text_color_dop
+    text-align: center
+    color:  #ffffff
+    font-size: 16px
+    text-transform: uppercase
+    font-weight: 700
+    width: 100%
+    margin-top: 20px
+    padding: 15px 0
+    &:hover
+      background-color: #fb8f8f
+      cursor: pointer

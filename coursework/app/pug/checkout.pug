@@ -1,0 +1,69 @@
+doctype html
+html(lang="en")
+    include includes/_head.pug
+    body
+        include includes/_header.pug
+        div#cart
+        .wrapper
+            .container
+                nav#menu.margin-top
+            include includes/_bread.pug
+            .container.margin-top
+                details.checkout-details(open)
+                    summary 01. shipping adress
+                    .details-wrapper
+                        .details-left
+                            .details-item
+                                p.details-text check as guest or register
+                                p.details-text-hint register with us for future convenience
+                            .details-item
+                                form.checkout-form
+                                    input(type="radio" name="checkout" id="details-radio-guest")
+                                    label(for="details-radio-guest").details-text checkout as guest
+                                    br
+                                    input(type="radio" name="checkout" id="details-radio-register")
+                                    label(for="details-radio-register").details-text register
+                            .details-item
+                                p.details-text register and save time
+                                p.details-text-hint register with us for future convenience
+                            .details-item
+                                p.details-text-hint >> fast and easy checkout
+                                p.details-text-hint >> easy access to your order history and status
+                            .details-item
+                                a.details-text(href="#") continue
+                        .details-right
+                            .details-item
+                                p.details-text already registred?
+                                p.details-text-hint please log in below
+                            .details-item
+                                form.checkout-registration
+                                    label.details-text(for='details-email') email adress
+                                        span.details-form-error *
+                                    input(type="email" id="details-email")
+                                    label.details-text(for="details-password") password
+                                        span.details-form-error *
+                                    input(type="password" id="details-password")
+                                    p.details-form-error * required fileds
+                            .details-item
+                                a.details-text(href="#") log in
+                                span.details-text-dop Forgot password?
+                details.checkout-details
+                    summary 02. billing information
+                details.checkout-details
+                    summary 03. shipping information
+                details.checkout-details
+                    summary 04. shipping method
+                details.checkout-details
+                    summary 05. payment method
+                details.checkout-details
+                    summary 06. order review
+            include includes/_subscribe.pug
+            include includes/_footer.pug
+        script(src='js/jquery.min.js')
+        script(src='js/jquery.validate.min.js')
+        script(src='js/jquery.mask.min.js')
+        script(src='js/tingle.min.js')
+        script(src='js/MenuItem.js')
+        script(src='js/Menu.js')
+        script(src='js/Cart.js')
+        script(src='js/main.js')

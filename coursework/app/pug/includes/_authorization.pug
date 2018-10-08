@@ -1,0 +1,22 @@
+.authorization-modal-wrapper
+    .authorization-modal
+        button.authorization-tab.authorization-active-tab authorization
+        button.authorization-tab registration
+    #authorization.authorization.authorization-active
+        form(action="#" method="post" id="form-authorization")
+            .authorization-input-wrapper
+                input.authorization-input(type="email" name="email" placeholder="Введите email")
+            .authorization-input-wrapper
+                input.authorization-input(type="password" name="password" placeholder="Введите пароль")
+            button.authorization-modal-btn(type="submit") submit
+    #registration.authorization
+        form(action="#" method="post" id="form-registration")
+            .authorization-input-wrapper
+                input.authorization-input(type="text" name="username" placeholder="Ваше имя")
+            .authorization-input-wrapper
+                input.authorization-input(type="email" name="email" placeholder="Действующий email")
+            .authorization-input-wrapper
+                input.authorization-input(type="tel" id="tel" name="tel" placeholder="Номер телефона")
+            .authorization-input-wrapper
+                input.authorization-input(type="password" name="password" placeholder="Введите пароль")
+            button.authorization-modal-btn(type="submit") register
