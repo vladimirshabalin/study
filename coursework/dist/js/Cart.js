@@ -62,6 +62,8 @@ class Cart {
     _renderSum(amount, countGoods) {
         $('.sum-amount').text(`Всего товаров в корзине: ${countGoods}`);
         $('.sum-price').text(`Общая сумма: $${amount}.`);
+        $('.sub-total-price').text(`${countGoods}`);
+        $('.grand-total-price').text(`$${amount}`);
     }
 
     _init() {
@@ -199,5 +201,7 @@ class Cart {
         $('.shCart-wrapper-items').empty();
         this._renderSum(0, 0);
         $('.cart-num').css('display', 'none');
+        // $('.sub-total-price').text(`0`);
+        // $('.grand-total-price').text(`0`);
     }
 }
