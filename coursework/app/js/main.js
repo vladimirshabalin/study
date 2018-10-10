@@ -5,7 +5,7 @@ $(document).ready(() => {
     let menu =
         new Menu('menu', 'main-menu', [
             new MenuItem('index.html', 'home', 'menu-item'),
-            new MenuItem(stub, 'men', 'menu-item'),
+            new MenuItem('product.html', 'men', 'menu-item'),
             new MenuItem(stub, 'women', 'menu-item'),
             new MenuItem(stub, 'kids', 'menu-item'),
             new SubMenu('menu-item', stub, 'accosiriese', 'sub-menu', 'sub-menu', [
@@ -23,6 +23,10 @@ $(document).ready(() => {
         ]);
     $('#menu').html(menu.render());
 
+    // $(".search-item-select").hover(function () {
+    //     $('.search-item-list').css('display', 'block');
+    //     console.log('123')
+    // })
 
     // Корзина
     let mycart = new Cart();

@@ -143,3 +143,5 @@ function () {
 
   return Feedback;
 }();
+
+var feed = new Feedback('json/feedback.json');

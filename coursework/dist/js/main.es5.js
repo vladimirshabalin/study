@@ -4,7 +4,11 @@ $(document).ready(function () {
   // Меню
   var stub = "#";
   var menu = new Menu('menu', 'main-menu', [new MenuItem('index.html', 'home', 'menu-item'), new MenuItem(stub, 'men', 'menu-item'), new MenuItem(stub, 'women', 'menu-item'), new MenuItem(stub, 'kids', 'menu-item'), new SubMenu('menu-item', stub, 'accosiriese', 'sub-menu', 'sub-menu', [new MenuItem(stub, 'Dresses', 'sub-menu-item'), new MenuItem(stub, 'Tops', 'sub-menu-item'), new MenuItem(stub, 'Sweaters/Coats', 'sub-menu-item'), new MenuItem(stub, 'Jackets/Knits', 'sub-menu-item'), new MenuItem(stub, 'Blazers', 'sub-menu-item'), new MenuItem(stub, 'Leggings/Pants', 'sub-menu-item'), new MenuItem(stub, 'Skirts/Shorts', 'sub-menu-item'), new MenuItem(stub, 'Accessories', 'sub-menu-item')]), new MenuItem(stub, 'featured', 'menu-item'), new MenuItem(stub, 'hot deals', 'menu-item')]);
-  $('#menu').html(menu.render()); // Корзина
+  $('#menu').html(menu.render()); // $(".search-item-select").hover(function () {
+  //     $('.search-item-list').css('display', 'block');
+  //     console.log('123')
+  // })
+  // Корзина
 
   var mycart = new Cart();
 
@@ -57,6 +61,9 @@ $(document).ready(function () {
       pointerEvents: 'auto',
       filter: 'none'
     });
+  });
+  $("#clear-local-storage").on("click", function () {
+    mycart._clearLocalStorage();
   }); // форма регистрации и входа
 
   var modal = new tingle.modal();
@@ -145,7 +152,5 @@ $(document).ready(function () {
       $('.tingle-modal-box').find('#registration').addClass('authorization-active');
       $('.tingle-modal-box').find('#authorization').removeClass('authorization-active');
     }
-  }); // отзывы
-
-  var feed = new Feedback('json/feedback.json');
+  });
 });

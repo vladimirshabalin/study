@@ -37,15 +37,16 @@
     font-weight: 900
 
 .search-item
+  position: relative
   margin-left: 40px
   line-height: 100px
-  position: relative
   input
+    display: inline-block
     border: 1px solid #e6e6e6
     height: 38px
     font-size: 14px
     padding-left: 10px
-  .search-item-select
+  .search-item-a
     width: 90px
     border-bottom-left-radius: 3px
     border-top-left-radius: 3px
@@ -75,6 +76,32 @@
     &:hover
       color: $text_color_dop
 
+.search-item-a
+  display: inline-block
+  height: 40px
+  box-sizing: border-box
+  line-height: 2.7
+  padding-left: 10px
+  border: 1px solid #e6e6e6
+  color:  $text_color
+  font-size: 14px
+  font-weight: 300
+
+.search-item-menu
+  display: none
+  background-color: #fff
+  border: 1px solid #e6e6e6
+  position: absolute
+  top: 70px
+  left: 0
+  padding: 10px 20px 10px 10px
+  a
+    display: block
+    color: $text_color
+    line-height: 30px
+    &:hover
+      color: $text_color_dop
+
 .header-content-right
   line-height: 100px
   position: relative
@@ -99,3 +126,5 @@
     right: 15px
     color: #fff
 
+.search-item-a:hover .search-item-menu
+  display: block
