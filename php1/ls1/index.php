@@ -1,7 +1,7 @@
 <?php
 $title = 'Document';
 $headline = 'Гость, добро пожаловать к нам на сайт!';
-$date = 'Сегодя 19.10.2018';
+$date = date("Y-m-d H:i:s");
 ?>
 <!DOCTYPE html>
 <html>
