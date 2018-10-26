@@ -5,33 +5,29 @@ $min = date('i');
 
 echo getTime($hour, $min);
 
-function calc($number, $array)
+function calc($num)
 {
-    if ($number >= 11 and $number <= 14) {
-        return "$number $array[2]";
+    if ($num >= 11 and $num <= 14) {
+        return ["$num часов", "$num минут"];
     }
 
-    $newNumber = $number % 10;
+    $fmod = $num % 10;
 
-    if ($newNumber === 1) {
-        return "$number $array[0]";
+    if ($fmod === 1) {
+        return ["$num час", "$num минута"];
     }
 
-    if ($newNumber >= 2 and $newNumber <= 4) {
-        return "$number $array[1]";
+    if ($fmod >= 2 and $fmod <= 4) {
+        return ["$num часа", "$num минуты"];
     }
 
-    return "$number $array[2]";
+    return ["$num часов", "$num минут"];
 }
 
-function getTime($hour, $minutes)
+function getTime($hour, $min)
 {
-    $hourArray = ['час', 'часа', 'часов'];
-    $minArray = ['минута', 'минуты', 'минут'];
+    $hour = calc($hour)[0];
+    $min = calc($min)[1];
 
-    $hour = calc($hour, $hourArray);
-    $minutes = calc($minutes, $minArray);
-
-    return $hour . ' '  . $minutes;
+    return $hour . ' ' . $min;
 }
-
